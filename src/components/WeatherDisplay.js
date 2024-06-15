@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import getWeatherIcon from '../utils/weatherIcons';
+//import dotenv from 'dotenv'
 
-const API_KEY = "5dd3ab4b467da53d151f9791197228a5";
+//dotenv.config()
+//const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
+const API_KEY="5dd3ab4b467da53d151f9791197228a5"
 
 const WeatherDisplay = ({ lat, lon }) => {
   const [weatherData, setWeatherData] = useState(null);
